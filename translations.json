@@ -1,0 +1,384 @@
+{
+  "es": {
+    "meta": {
+      "homeTitle": "Inicio - Bryan Machín | Desarrollador Full Stack",
+      "aboutTitle": "Sobre mí - Bryan Machín | Portfolio",
+      "hobbiesTitle": "Intereses - Bryan Machín | Portfolio",
+      "contactTitle": "Contacto - Bryan Machín | Portfolio",
+      "projectsTitle": "Proyectos - Bryan Machín | Portfolio",
+      "sitemapTitle": "Mapa del Sitio - Bryan Machín | Portfolio",
+      "homeDescription": "Bryan Machín García - Desarrollador Full Stack e Investigador en Criptografía. Experiencia en Angular, .NET, Python y Blockchain.",
+      "aboutDescription": "Experiencia profesional y formación académica de Bryan Machín. Desarrollador Full Stack con experiencia en desarrollo web y Blockchain.",
+      "hobbiesDescription": "Intereses y aficiones de Bryan. Desarrollo web, fútbol, música y tecnología.",
+      "contactDescription": "Información de contacto de Bryan Machín. Email, teléfono, LinkedIn y GitHub.",
+      "projectsDescription": "Proyectos personales y profesionales de Bryan Machín. Weather bot, Blockchain, sistemas de información y más.",
+      "sitemapDescription": "Mapa del sitio web personal de Bryan. Navega por todas las secciones disponibles."
+    },
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "hobbies": "Intereses",
+      "contact": "Contacto",
+      "ariaLabel": "Navegación principal"
+    },
+    "search": {
+      "placeholder": "Buscar...",
+      "ariaLabel": "Buscar",
+      "noResults": "No se encontraron resultados para",
+      "loading": "Cargando índice..."
+    },
+    "home": {
+      "name": "Bryan Machín García",
+      "title": "Desarrollador Full Stack e Investigador en Criptografía",
+      "intro": "Desarrollador con experiencia en Angular, C#, .NET Core, Python y tecnologías Blockchain. Actualmente cursando Máster en Ingeniería Web en la Universidad de Oviedo.",
+      "videoLabel": "Video de presentación de Bryan Machín",
+      "videoNotSupported": "Tu navegador no soporta el elemento video.",
+      "downloadVideo": "Descarga el video aquí"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "professionalTitle": "Perfil Profesional",
+      "professionalDesc": "Desarrollador Full Stack e Investigador en Criptografía con experiencia en desarrollo de aplicaciones front-end y back-end. Busco continuar creciendo en el campo de la tecnología y contribuir al desarrollo de soluciones tecnológicas avanzadas.",
+      "experienceTitle": "Experiencia Laboral",
+      "educationTitle": "Formación Académica",
+      "referencesTitle": "Referencias Profesionales",
+      "imgAlt": "Foto de perfil de Bryan",
+      "experience": {
+        "job1": {
+          "title": "Desarrollador Full Stack - Gahos Enterprises Inc",
+          "period": "Abril 2025 - Noviembre 2025",
+          "location": "Miami, Florida, Estados Unidos",
+          "modality": "Remoto",
+          "description": "Desarrollador de software con experiencia en Angular, C#, .NET Core, Entity Framework, Azure, Python y SQL. Enfocado en ofrecer soluciones web robustas, escalables y confiables que impulsan la innovación y la eficiencia empresarial."
+        },
+        "job2": {
+          "title": "Desarrollador Blockchain - Fusyona",
+          "period": "Septiembre 2024 - Abril 2025",
+          "location": "Río de Janeiro, Brasil",
+          "modality": "Remoto",
+          "description": "Desarrollo e implementación de sistemas descentralizados basados en blockchain. Desarrollo de smart contracts en plataformas como Ethereum usando Solidity. Integración de APIs para conectar aplicaciones a redes blockchain, asegurando la seguridad y eficiencia de las transacciones. Colaboración en pruebas y auditorías de código. Investigación de nuevas tecnologías y optimización de procesos."
+        },
+        "job3": {
+          "title": "Investigador - Universidad de La Habana",
+          "period": "Enero 2023 - Agosto 2024",
+          "location": "La Habana, Cuba",
+          "modality": "Híbrida",
+          "description": "Investigador en la Facultad de Matemática y Computación enfocado en criptografía y desarrollo de plataformas Blockchain. Parte integral de equipos de desarrollo que proveen sistemas basados en Blockchain a empresas. Investigación de avances tecnológicos para creación y soporte de infraestructura. Despliegue de plataformas y participación en desarrollo Frontend y Backend. Trabajo con Hyperledger Fabric y Quorum (basado en Ethereum)."
+        },
+        "job4": {
+          "title": "Desarrollador Full Stack - Blueberry Systems Ltd",
+          "period": "Enero 2023 - Julio 2024",
+          "location": "Birmingham, Reino Unido",
+          "modality": "Remoto",
+          "description": "Responsabilidades en procesos de desarrollo y release, incluyendo creación de builds, scripts de compilación y generación de documentación. Soporte mediante corrección de bugs e implementación de funcionalidades solicitadas. Desarrollo front-end con Angular. Desarrollo back-end con C#, .NET Core, Entity Framework y ASP.NET Core. Trabajo extensivo con bases de datos SQL."
+        }
+      },
+      "education": {
+        "master": {
+          "degree": "Máster en Ingeniería Web",
+          "institution": "Universidad de Oviedo",
+          "period": "Enero 2025 - Actualmente",
+          "location": "Oviedo, Asturias, España",
+          "description": "Programa académico avanzado enfocado en el diseño y desarrollo seguro de sistemas basados en web. La especialización proporciona formación en profundidad en: análisis de vulnerabilidades de aplicaciones web y redes, criptografía aplicada y protocolos de comunicación seguros, seguridad en sistemas distribuidos y arquitecturas basadas en la nube, modelado de amenazas, evaluación y estrategias de mitigación de riesgos, cumplimiento de estándares de la industria (OWASP Top 10, ISO/IEC 27001, etc.)."
+        },
+        "bachelor": {
+          "degree": "Licenciatura en Ciencias de la Computación",
+          "institution": "Universidad de La Habana",
+          "period": "Septiembre 2017 - Diciembre 2022",
+          "location": "La Habana, Cuba",
+          "description": "Formación sólida en Ciencias de la Computación, especializado en el diseño, desarrollo y mantenimiento de sistemas y aplicaciones informáticas. Conocimientos avanzados en: programación (Python, C++, C#), algoritmos y estructuras de datos, bases de datos relacionales y no relacionales, desarrollo de software con metodologías ágiles, inteligencia artificial y machine learning, redes y ciberseguridad."
+        }
+      },
+      "references": {
+        "ref1": {
+          "name": "Liubov Green",
+          "position": "Directora de Recursos Humanos",
+          "company": "Blueberry",
+          "email": "liubov.green@bbconsult.co.uk",
+          "phone": "+44 (121) 285 6404 (Ext.120)"
+        }
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "project1": {
+        "name": "Weather Bot",
+        "date": "Julio 2024",
+        "description": "Chatbot para consultas relacionadas principalmente con el clima. También permite consultar datos históricos de la región de Boulder en Colorado.",
+        "skills": "Python, Docker, AI, Streamlit, GitLab, Pruebas automatizadas, Flowise, Hugging Face, Ngrok"
+      },
+      "project2": {
+        "name": "Performance Analysis for Hyperledger Fabric v2.4",
+        "date": "Mayo 2022 - Diciembre 2022",
+        "location": "La Habana, Cuba",
+        "description": "Investigación sobre la plataforma blockchain Hyperledger Fabric con la intención de ofrecer una configuración para dos posibles escenarios de trabajo: volúmenes bajos y altos de transacciones por segundo.",
+        "skills": "Hyperledger Fabric, Minifab, Estadística, Coeficiente de Spearman, R"
+      },
+      "project3": {
+        "name": "LearnPro: Learning Process Simulator",
+        "date": "Noviembre 2021 - Enero 2022",
+        "description": "Software para encontrar una estrategia de aprendizaje usando IA, basado en la simulación de un ambiente de aprendizaje definido en un lenguaje de dominio específico (DSL), llamado LearnPro.",
+        "skills": "Python, Streamlit, Inteligencia Artificial, Compilación, Simulación"
+      },
+      "project4": {
+        "name": "Information Retrieval System: Search Engine",
+        "date": "Noviembre 2021 - Enero 2022",
+        "description": "Diseño e implementación de un sistema de recuperación de información basado en el modelo vectorial, para procesar consultas y recuperar documentos relevantes del corpus.",
+        "skills": "Python, Álgebra"
+      },
+      "project5": {
+        "name": "Cine+",
+        "date": "Abril 2021 - Junio 2021",
+        "description": "Plataforma oficial de un cine, para gestionar la reserva de asientos y la venta de boletos para sus usuarios.",
+        "skills": "HTML, CSS, SQL, C#, ASP.NET Core, .NET Core, Entity Framework"
+      },
+      "project6": {
+        "name": "Sims 4 Db-Manager",
+        "date": "Marzo 2021 - Mayo 2021",
+        "description": "Sistema de base de datos para modelar y gestionar las características principales del juego The Sims 4, estableciendo la conexión a la base de datos mediante operaciones CRUD, desde la perspectiva del jugador.",
+        "skills": "HTML, CSS, SQL, C#, ASP.NET Core, .NET Core, Entity Framework"
+      },
+      "project7": {
+        "name": "WhatsApp Descentralizado",
+        "date": "Mayo 2022 - Julio 2022",
+        "description": "Diseño e implementación de una aplicación de mensajería descentralizada.",
+        "skills": "Python, FastAPI, Sistemas Distribuidos"
+      }
+    },
+    "hobbies": {
+      "title": "Mis intereses",
+      "intro": "Más allá del código, estas son las pasiones que definen quién soy y cómo veo el mundo.",
+      "webDev": "Desarrollo web y programación",
+      "webDevDesc": "Me apasiona crear soluciones elegantes y eficientes. Disfruto explorando nuevas tecnologías, frameworks y mejores prácticas. Cada línea de código es una oportunidad para aprender algo nuevo y construir algo significativo.",
+      "football": "Fútbol (fanático del FC Barcelona)",
+      "footballDesc": "Más que un club. Seguidor incondicional del FC Barcelona desde siempre. El fútbol me enseña sobre trabajo en equipo, estrategia y la importancia de nunca rendirse. Cada partido es una lección de vida.",
+      "music": "Música POP",
+      "musicDesc": "La música es mi compañera constante. El POP, con sus melodías pegajosas y letras emotivas, me acompaña en cada momento del día. Desde clásicos hasta los últimos éxitos, la música es mi banda sonora personal.",
+      "cars": "Coches y tecnología automotriz",
+      "carsDesc": "Fascinado por la evolución de la industria automotriz. Desde los motores de combustión hasta los vehículos eléctricos y autónomos, la tecnología en el automovilismo representa la innovación en su máxima expresión.",
+      "peace": "Tranquilidad y momentos de calma",
+      "peaceDesc": "En un mundo acelerado, valoro profundamente los momentos de paz y reflexión. Estos espacios de calma me permiten recargar energías, pensar con claridad y mantener el equilibrio entre lo profesional y lo personal.",
+      "problemSolving": "Resolver problemas complejos",
+      "problemSolvingDesc": "Los desafíos complejos son mi zona de confort. Me motiva enfrentarme a problemas difíciles, analizar todas las variables y encontrar soluciones creativas. Cada problema resuelto es una victoria que impulsa mi crecimiento."
+    },
+    "contact": {
+      "title": "Contacto",
+      "socialMedia": "Redes Sociales",
+      "email": "Email: uo312147@uniovi.es",
+      "phone": "Teléfono: +34 642 277 518",
+      "linkedin": "LinkedIn: Bryan Machín García",
+      "github": "GitHub: BryanMachin"
+    },
+    "sitemap": {
+      "title": "Mapa del Sitio",
+      "intro": "Explora todas las secciones disponibles en mi sitio web personal.",
+      "structureLabel": "Estructura del sitio",
+      "homeDesc": "Página principal donde podrás conocer más sobre mi trayectoria académica, experiencia y proyectos.",
+      "aboutDesc": "Información sobre mi formación académica, experiencia profesional en desarrollo web y blockchain, intereses profesionales y trayectoria.",
+      "projectsDesc": "Portafolio de proyectos personales y profesionales, incluyendo Weather Bot, sistemas blockchain, aplicaciones web y más.",
+      "hobbiesDesc": "Descubre mis aficiones y pasatiempos, incluyendo desarrollo web, fútbol, música, coches y más.",
+      "contactDesc": "Información de contacto incluyendo email, teléfono, LinkedIn y GitHub para ponerte en contacto conmigo."
+    },
+    "footer": {
+      "lastUpdate": "Última actualización:",
+      "sitemap": "Mapa del Sitio",
+      "copyright": "Todos los derechos reservados."
+    },
+    "language": {
+      "spanish": "Español",
+      "english": "English"
+    }
+  },
+  "en": {
+    "meta": {
+      "homeTitle": "Home - Bryan Machín | Full Stack Developer",
+      "aboutTitle": "About me - Bryan Machín | Portfolio",
+      "hobbiesTitle": "Interests - Bryan Machín | Portfolio",
+      "contactTitle": "Contact - Bryan Machín | Portfolio",
+      "projectsTitle": "Projects - Bryan Machín | Portfolio",
+      "sitemapTitle": "Site Map - Bryan Machín | Portfolio",
+      "homeDescription": "Bryan Machín García - Full Stack Developer & Cryptography Researcher. Experience in Angular, .NET, Python and Blockchain.",
+      "aboutDescription": "Professional experience and academic background of Bryan Machín. Full Stack Developer with experience in web development and Blockchain.",
+      "hobbiesDescription": "Bryan's interests and hobbies. Web development, football, music and technology.",
+      "contactDescription": "Bryan Machín's contact information. Email, phone, LinkedIn and GitHub.",
+      "projectsDescription": "Bryan Machín's personal and professional projects. Weather bot, Blockchain, information systems and more.",
+      "sitemapDescription": "Bryan's personal website sitemap. Navigate through all available sections."
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About me",
+      "projects": "Projects",
+      "hobbies": "Interests",
+      "contact": "Contact",
+      "ariaLabel": "Main navigation"
+    },
+    "search": {
+      "placeholder": "Search...",
+      "ariaLabel": "Search",
+      "noResults": "No results found for",
+      "loading": "Loading index..."
+    },
+    "home": {
+      "name": "Bryan Machín García",
+      "title": "Full Stack Developer & Cryptography Researcher",
+      "intro": "Developer with experience in Angular, C#, .NET Core, Python and Blockchain technologies. Currently pursuing a Master's degree in Web Engineering at the University of Oviedo.",
+      "videoLabel": "Bryan Machín presentation video",
+      "videoNotSupported": "Your browser does not support the video element.",
+      "downloadVideo": "Download the video here"
+    },
+    "about": {
+      "title": "About me",
+      "professionalTitle": "Professional Profile",
+      "professionalDesc": "Full Stack Developer and Cryptography Researcher with experience in developing both front-end and back-end applications. Professionally, I seek to continue growing in the field of technology and contribute to the development of advanced technological solutions.",
+      "experienceTitle": "Work Experience",
+      "educationTitle": "Education",
+      "referencesTitle": "Professional References",
+      "imgAlt": "Bryan's profile picture",
+      "experience": {
+        "job1": {
+          "title": "Full Stack Developer - Gahos Enterprises Inc",
+          "period": "April 2025 - November 2025",
+          "location": "Miami, Florida, United States",
+          "modality": "Remote",
+          "description": "Software developer with expertise in Angular, C#, .NET Core, Entity Framework, Azure, Python, and SQL. Focused on delivering robust, scalable, and reliable web solutions that drive innovation and business efficiency."
+        },
+        "job2": {
+          "title": "Blockchain Developer - Fusyona",
+          "period": "September 2024 - April 2025",
+          "location": "Rio de Janeiro, Brazil",
+          "modality": "Remote",
+          "description": "Development and implementation of decentralized systems based on blockchain technology. Development of smart contracts on platforms like Ethereum using Solidity. API integration to connect applications to blockchain networks, ensuring transaction security and efficiency. Active collaboration on code testing and audits. Research into new technologies and process optimization."
+        },
+        "job3": {
+          "title": "Researcher - University of Havana",
+          "period": "January 2023 - August 2024",
+          "location": "Havana, Cuba",
+          "modality": "Hybrid",
+          "description": "Researcher at the Faculty of Mathematics and Computing focused on cryptography and Blockchain platform development. Integral part of development teams providing Blockchain-based systems to companies. Research on latest technological advancements for infrastructure creation and support. Platform deployment and participation in Frontend and Backend development. Work with Hyperledger Fabric and Quorum (Ethereum-based)."
+        },
+        "job4": {
+          "title": "Full Stack Developer - Blueberry Systems Ltd",
+          "period": "January 2023 - July 2024",
+          "location": "Birmingham, United Kingdom",
+          "modality": "Remote",
+          "description": "Responsibilities in development and release processes, including creating builds, build scripts, and documentation. Support through bug fixing and implementing requested features. Front-end development with Angular. Back-end development with C#, .NET Core, Entity Framework, and ASP.NET Core. Extensive work with SQL databases."
+        }
+      },
+      "education": {
+        "master": {
+          "degree": "Master's Degree in Web Engineering",
+          "institution": "University of Oviedo",
+          "period": "January 2025 - Currently",
+          "location": "Oviedo, Asturias, Spain",
+          "description": "Advanced academic program focused on secure design and development of web-based systems. Specialization provides in-depth training in: web application and network vulnerability analysis, applied cryptography and secure communication protocols, security in distributed systems and cloud-based architectures, threat modeling and risk assessment, compliance with industry standards (OWASP Top 10, ISO/IEC 27001)."
+        },
+        "bachelor": {
+          "degree": "Bachelor of Computer Science",
+          "institution": "University of Havana",
+          "period": "September 2017 - December 2022",
+          "location": "Havana, Cuba",
+          "description": "Solid background in Computer Science, specializing in design, development, and maintenance of computer systems and applications. Advanced knowledge in: programming (Python, C++, C#), algorithms and data structures, relational and non-relational databases, agile software development methodologies, artificial intelligence and machine learning, networks and cybersecurity."
+        }
+      },
+      "references": {
+        "ref1": {
+          "name": "Liubov Green",
+          "position": "Head of HR",
+          "company": "Blueberry",
+          "email": "liubov.green@bbconsult.co.uk",
+          "phone": "+44 (121) 285 6404 (Ext.120)"
+        }
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "project1": {
+        "name": "Weather Bot",
+        "date": "July 2024",
+        "description": "Chatbot for weather-related questions. Also allows querying historical data for the Boulder region in Colorado.",
+        "skills": "Python, Docker, AI, Streamlit, GitLab, Automated testing, Flowise, Hugging Face, Ngrok"
+      },
+      "project2": {
+        "name": "Performance Analysis for Hyperledger Fabric v2.4",
+        "date": "May 2022 - December 2022",
+        "location": "Havana, Cuba",
+        "description": "Investigation on the Hyperledger Fabric blockchain platform to provide configuration for two possible work scenarios: low and high volumes of transactions per second.",
+        "skills": "Hyperledger Fabric, Minifab, Statistics, Spearman's coefficient, R"
+      },
+      "project3": {
+        "name": "LearnPro: Learning Process Simulator",
+        "date": "November 2021 - January 2022",
+        "description": "Software to find a learning strategy using AI, based on simulation of a learning environment defined in a domain-specific language (DSL), called LearnPro.",
+        "skills": "Python, Streamlit, Artificial Intelligence, Compilation, Simulation"
+      },
+      "project4": {
+        "name": "Information Retrieval System: Search Engine",
+        "date": "November 2021 - January 2022",
+        "description": "Design and implementation of an information retrieval system based on the vectorial model, to process queries and retrieve relevant documents from the corpus.",
+        "skills": "Python, Algebra"
+      },
+      "project5": {
+        "name": "Cine+",
+        "date": "April 2021 - June 2021",
+        "description": "Official cinema platform for managing seat reservations and ticket sales for users.",
+        "skills": "HTML, CSS, SQL, C#, ASP.NET Core, .NET Core, Entity Framework"
+      },
+      "project6": {
+        "name": "Sims 4 Db-Manager",
+        "date": "March 2021 - May 2021",
+        "description": "Database system to model and manage main features of The Sims 4 Game, establishing database connection through CRUD operations from the player's perspective.",
+        "skills": "HTML, CSS, SQL, C#, ASP.NET Core, .NET Core, Entity Framework"
+      },
+      "project7": {
+        "name": "Decentralized WhatsApp",
+        "date": "May 2022 - July 2022",
+        "description": "Design and implementation of a decentralized messaging application.",
+        "skills": "Python, FastAPI, Distributed Systems"
+      }
+    },
+    "hobbies": {
+      "title": "My interests",
+      "intro": "Beyond code, these are the passions that define who I am and how I see the world.",
+      "webDev": "Web development and programming",
+      "webDevDesc": "I'm passionate about creating elegant and efficient solutions. I enjoy exploring new technologies, frameworks, and best practices. Every line of code is an opportunity to learn something new and build something meaningful.",
+      "football": "Football (FC Barcelona fan)",
+      "footballDesc": "More than a club. Unconditional follower of FC Barcelona since always. Football teaches me about teamwork, strategy, and the importance of never giving up. Every match is a life lesson.",
+      "music": "POP Music",
+      "musicDesc": "Music is my constant companion. POP, with its catchy melodies and emotional lyrics, accompanies me every moment of the day. From classics to the latest hits, music is my personal soundtrack.",
+      "cars": "Cars and automotive technology",
+      "carsDesc": "Fascinated by the evolution of the automotive industry. From combustion engines to electric and autonomous vehicles, automotive technology represents innovation at its finest.",
+      "peace": "Tranquility and moments of calm",
+      "peaceDesc": "In a fast-paced world, I deeply value moments of peace and reflection. These calm spaces allow me to recharge, think clearly, and maintain balance between professional and personal life.",
+      "problemSolving": "Solving complex problems",
+      "problemSolvingDesc": "Complex challenges are my comfort zone. I'm motivated by facing difficult problems, analyzing all variables, and finding creative solutions. Every problem solved is a victory that drives my growth."
+    },
+    "contact": {
+      "title": "Contact",
+      "socialMedia": "Social Media",
+      "email": "Email: uo312147@uniovi.es",
+      "phone": "Phone: +34 642 277 518",
+      "linkedin": "LinkedIn: Bryan Machín García",
+      "github": "GitHub: BryanMachin"
+    },
+    "sitemap": {
+      "title": "Site Map",
+      "intro": "Explore all available sections on my personal website.",
+      "structureLabel": "Site structure",
+      "homeDesc": "Main page where you can learn more about my academic background, experience, and projects.",
+      "aboutDesc": "Information about my academic background, professional experience in web development and blockchain, professional interests and career path.",
+      "projectsDesc": "Portfolio of personal and professional projects, including Weather Bot, blockchain systems, web applications and more.",
+      "hobbiesDesc": "Discover my hobbies and interests, including web development, football, music, cars and more.",
+      "contactDesc": "Contact information including email, phone, LinkedIn and GitHub to get in touch with me."
+    },
+    "footer": {
+      "lastUpdate": "Last update:",
+      "sitemap": "Site Map",
+      "copyright": "All rights reserved."
+    },
+    "language": {
+      "spanish": "Español",
+      "english": "English"
+    }
+  }
+}

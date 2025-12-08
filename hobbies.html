@@ -8,45 +8,108 @@
   <meta name="author" content="Bryan">
   <title>Intereses - Bryan | Portfolio Personal</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body data-page="hobbies">
 
-  <header class="sidebar">
-    <h1>Bryan</h1>
-    <p class="profesion">Estudiante del Máster en Ingeniería Web</p>
-    <nav aria-label="Navegación principal">
-      <ul class="side-nav">
-        <li><a href="index.html">🏠 Inicio</a></li>
-        <li><a href="about.html">👤 Sobre mí</a></li>
-        <li><a href="hobbies.html" aria-current="page">🎯 Intereses</a></li>
-        <li><a href="contact.html">📧 Contacto</a></li>
+  <header class="topbar">
+    <nav data-i18n-attr="aria-label" data-i18n="nav.ariaLabel" aria-label="Navegación principal">
+      <ul class="top-nav">
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Inicio</span></a></li>
+        <li><a href="about.html"><i class="fa-solid fa-user"></i> <span data-i18n="nav.about">Sobre mí</span></a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-briefcase"></i> <span data-i18n="nav.projects">Proyectos</span></a></li>
+        <li><a href="hobbies.html" aria-current="page"><i class="fa-solid fa-heart"></i> <span data-i18n="nav.hobbies">Intereses</span></a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> <span data-i18n="nav.contact">Contacto</span></a></li>
       </ul>
     </nav>
+    <div class="language-selector">
+      <select id="language-select" aria-label="Seleccionar idioma">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+    <div class="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input 
+        type="search" 
+        id="search-input" 
+        placeholder="Buscar..." 
+        data-i18n="search.placeholder"
+        data-i18n-attr="aria-label"
+        aria-label="Buscar"
+        autocomplete="off">
+      <div id="search-results" class="search-results" role="list" aria-live="polite"></div>
+    </div>
   </header>
 
   <main id="main-content">
     <section class="card">
-      <h2>Mis intereses</h2>
-      <ul>
-        <li>⚡ Desarrollo web y programación</li>
-        <li>⚽ Fútbol (fanático del FC Barcelona)</li>
-        <li>🎵 Música POP</li>
-        <li>🚗 Coches y tecnología automotriz</li>
-        <li>🧘 Tranquilidad y momentos de calma</li>
-        <li>🔧 Resolver problemas complejos</li>
-      </ul>
+      <h2 data-i18n="hobbies.title">Mis intereses</h2>
+      <p class="hobbies-intro" data-i18n="hobbies.intro">Más allá del código, estas son las pasiones que definen quién soy y cómo veo el mundo.</p>
+      
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3 data-i18n="hobbies.webDev">Desarrollo web y programación</h3>
+          <p data-i18n="hobbies.webDevDesc">Me apasiona crear soluciones elegantes y eficientes. Disfruto explorando nuevas tecnologías, frameworks y mejores prácticas. Cada línea de código es una oportunidad para aprender algo nuevo y construir algo significativo.</p>
+        </div>
+        
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fa-solid fa-futbol"></i>
+          </div>
+          <h3 data-i18n="hobbies.football">Fútbol (fanático del FC Barcelona)</h3>
+          <p data-i18n="hobbies.footballDesc">Más que un club. Seguidor incondicional del FC Barcelona desde siempre. El fútbol me enseña sobre trabajo en equipo, estrategia y la importancia de nunca rendirse. Cada partido es una lección de vida.</p>
+        </div>
+        
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fa-solid fa-music"></i>
+          </div>
+          <h3 data-i18n="hobbies.music">Música POP</h3>
+          <p data-i18n="hobbies.musicDesc">La música es mi compañera constante. El POP, con sus melodías pegajosas y letras emotivas, me acompaña en cada momento del día. Desde clásicos hasta los últimos éxitos, la música es mi banda sonora personal.</p>
+        </div>
+        
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 data-i18n="hobbies.cars">Coches y tecnología automotriz</h3>
+          <p data-i18n="hobbies.carsDesc">Fascinado por la evolución de la industria automotriz. Desde los motores de combustión hasta los vehículos eléctricos y autónomos, la tecnología en el automovilismo representa la innovación en su máxima expresión.</p>
+        </div>
+        
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <h3 data-i18n="hobbies.peace">Tranquilidad y momentos de calma</h3>
+          <p data-i18n="hobbies.peaceDesc">En un mundo acelerado, valoro profundamente los momentos de paz y reflexión. Estos espacios de calma me permiten recargar energías, pensar con claridad y mantener el equilibrio entre lo profesional y lo personal.</p>
+        </div>
+        
+        <div class="hobby-card">
+          <div class="hobby-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3 data-i18n="hobbies.problemSolving">Resolver problemas complejos</h3>
+          <p data-i18n="hobbies.problemSolvingDesc">Los desafíos complejos son mi zona de confort. Me motiva enfrentarme a problemas difíciles, analizar todas las variables y encontrar soluciones creativas. Cada problema resuelto es una victoria que impulsa mi crecimiento.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <time datetime="2025">2025</time> Bryan.</p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-      <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-      <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
-    </a>
+    <p>
+      <span>Copyright &copy; <time datetime="2025">2025</time> Bryan. <span data-i18n="footer.copyright">Todos los derechos reservados.</span></span>
+      <span><span data-i18n="footer.lastUpdate">Última actualización:</span> <time datetime="2025-12-08">08/12/2025.</time></span>
+    </p>
+    <p>
+      <a href="sitemap.html" data-i18n="footer.sitemap">Mapa del Sitio</a>
+    </p>
   </footer>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>
