@@ -31,7 +31,9 @@
     "home": {
       "name": "Bryan Machín García",
       "title": "Desarrollador Full Stack e Investigador en Criptografía",
-      "intro": "Desarrollador con experiencia en Angular, C#, .NET Core, Python y tecnologías Blockchain. Actualmente cursando Máster en Ingeniería Web en la Universidad de Oviedo.",
+      "intro1": "Desarrollador con experiencia en",
+      "intro2": "Python y tecnologías",
+      "intro3": "Actualmente cursando Máster en Ingeniería Web en la Universidad de Oviedo.",
       "videoLabel": "Video de presentación de Bryan Machín",
       "videoNotSupported": "Tu navegador no soporta el elemento video.",
       "downloadVideo": "Descarga el video aquí"
@@ -188,6 +190,37 @@
     "language": {
       "spanish": "Español",
       "english": "English"
+    },
+    "tooltips": {
+      "angular": "Framework de JavaScript para aplicaciones web modernas",
+      "dotnet": "Plataforma de desarrollo de Microsoft para aplicaciones multiplataforma",
+      "blockchain": "Tecnología de registro distribuido que permite transacciones seguras y transparentes",
+      "smartContracts": "Contratos autoejecutables con términos escritos directamente en código",
+      "ethereum": "Plataforma blockchain descentralizada para contratos inteligentes",
+      "solidity": "Lenguaje de programación para smart contracts en Ethereum",
+      "hyperledger": "Plataforma blockchain empresarial de código abierto",
+      "quorum": "Blockchain empresarial basado en Ethereum",
+      "owasp": "Open Web Application Security Project - Lista de las 10 vulnerabilidades más críticas en aplicaciones web",
+      "iso27001": "Estándar internacional para gestión de seguridad de la información",
+      "email": "Correo institucional de la Universidad de Oviedo",
+      "phone": "Disponible para llamadas y mensajes WhatsApp",
+      "linkedin": "Red profesional - Conecta conmigo para oportunidades laborales",
+      "github": "Repositorio de código - Explora mis proyectos open source",
+      "docker": "Plataforma para crear, desplegar y ejecutar aplicaciones en contenedores",
+      "ai": "Inteligencia Artificial - Simulación de procesos de inteligencia humana por máquinas",
+      "streamlit": "Framework de Python para crear aplicaciones web interactivas y dashboards de datos",
+      "gitlab": "Plataforma de desarrollo colaborativo basada en Git",
+      "huggingface": "Plataforma de machine learning y modelos de IA de código abierto",
+      "ngrok": "Herramienta para exponer servidores locales a internet mediante túneles seguros",
+      "minifab": "Herramienta para desplegar rápidamente redes Hyperledger Fabric para desarrollo",
+      "rlang": "Lenguaje de programación para análisis estadístico y gráficos",
+      "dsl": "Domain-Specific Language - Lenguaje de programación especializado para un dominio particular",
+      "sql": "Structured Query Language - Lenguaje para gestionar bases de datos relacionales",
+      "aspnet": "Framework web de código abierto para construir aplicaciones modernas con .NET",
+      "entityframework": "ORM (Object-Relational Mapper) para trabajar con bases de datos usando objetos .NET",
+      "crud": "Create, Read, Update, Delete - Operaciones básicas de gestión de datos",
+      "fastapi": "Framework web moderno y rápido para construir APIs con Python",
+      "azure": "Plataforma de computación en la nube de Microsoft"
     }
   },
   "en": {
@@ -222,7 +255,9 @@
     "home": {
       "name": "Bryan Machín García",
       "title": "Full Stack Developer & Cryptography Researcher",
-      "intro": "Developer with experience in Angular, C#, .NET Core, Python and Blockchain technologies. Currently pursuing a Master's degree in Web Engineering at the University of Oviedo.",
+      "intro1": "Developer with experience in",
+      "intro2": "Python and",
+      "intro3": "technologies. Currently pursuing a Master's degree in Web Engineering at the University of Oviedo.",
       "videoLabel": "Bryan Machín presentation video",
       "videoNotSupported": "Your browser does not support the video element.",
       "downloadVideo": "Download the video here"
@@ -379,6 +414,37 @@
     "language": {
       "spanish": "Español",
       "english": "English"
+    },
+    "tooltips": {
+      "angular": "JavaScript framework for modern web applications",
+      "dotnet": "Microsoft development platform for cross-platform applications",
+      "blockchain": "Distributed ledger technology that enables secure and transparent transactions",
+      "smartContracts": "Self-executing contracts with terms written directly in code",
+      "ethereum": "Decentralized blockchain platform for smart contracts",
+      "solidity": "Programming language for smart contracts on Ethereum",
+      "hyperledger": "Open-source enterprise blockchain platform",
+      "quorum": "Enterprise blockchain based on Ethereum",
+      "owasp": "Open Web Application Security Project - List of the 10 most critical vulnerabilities in web applications",
+      "iso27001": "International standard for information security management",
+      "email": "Institutional email from the University of Oviedo",
+      "phone": "Available for calls and WhatsApp messages",
+      "linkedin": "Professional network - Connect with me for job opportunities",
+      "github": "Code repository - Explore my open source projects",
+      "docker": "Platform for creating, deploying and running applications in containers",
+      "ai": "Artificial Intelligence - Simulation of human intelligence processes by machines",
+      "streamlit": "Python framework for creating interactive web applications and data dashboards",
+      "gitlab": "Git-based collaborative development platform",
+      "huggingface": "Open-source machine learning and AI models platform",
+      "ngrok": "Tool to expose local servers to the internet through secure tunnels",
+      "minifab": "Tool for quickly deploying Hyperledger Fabric networks for development",
+      "rlang": "Programming language for statistical analysis and graphics",
+      "dsl": "Domain-Specific Language - Programming language specialized for a particular domain",
+      "sql": "Structured Query Language - Language for managing relational databases",
+      "aspnet": "Open-source web framework for building modern applications with .NET",
+      "entityframework": "ORM (Object-Relational Mapper) for working with databases using .NET objects",
+      "crud": "Create, Read, Update, Delete - Basic data management operations",
+      "fastapi": "Modern, fast web framework for building APIs with Python",
+      "azure": "Microsoft's cloud computing platform"
     }
   }
 }

@@ -368,6 +368,19 @@ address i {
   text-align: center;
 }
 
+address i[data-tooltip] {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+address i[data-tooltip]:hover {
+  opacity: 1;
+  color: #2563eb;
+  transform: scale(1.15);
+}
+
 address a {
   color: #0a0a0a;
   text-decoration: none;
@@ -819,5 +832,86 @@ mark {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== TOOLTIPS ===== */
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted #666;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+  pointer-events: none;
+  max-width: 250px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
+}
+
+[data-tooltip]::after {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 3px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+[data-tooltip]:hover::before,
+[data-tooltip]:hover::after,
+[data-tooltip]:focus::before,
+[data-tooltip]:focus::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Tooltip para íconos */
+i[data-tooltip] {
+  cursor: help;
+  color: #3b82f6;
+  margin-left: 0.3rem;
+  border-bottom: none;
+  font-size: 0.9em;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+i[data-tooltip]:hover {
+  color: #2563eb;
+  transform: scale(1.1);
+}
+
+/* Accesibilidad para tooltips */
+[data-tooltip]:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  [data-tooltip]::before {
+    max-width: 200px;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
   }
 }
