@@ -200,7 +200,7 @@ figure {
 
 figcaption {
   font-style: italic;
-  color: #666666;
+  color: #595959;
   margin-top: 0.4rem;
   font-size: 0.9rem;
 }
@@ -242,7 +242,7 @@ figcaption {
 
 .period {
   font-size: 0.9rem;
-  color: #666;
+  color: #595959;
   margin-bottom: 0.75rem;
   font-style: italic;
 }
@@ -338,7 +338,7 @@ figcaption {
 
 .project-date {
   font-size: 0.9rem;
-  color: #666;
+  color: #595959;
   margin-bottom: 0.75rem;
   font-style: italic;
 }
@@ -417,7 +417,7 @@ address p:nth-child(4) i { color: #333; }
 
 .external-link-text {
   font-size: 0.8rem;
-  color: #666;
+  color: #595959;
   font-style: italic;
   margin-left: 0.3rem;
 }
@@ -429,7 +429,7 @@ address a:hover .external-link-icon {
 /* ===== HOBBIES / INTERESES ===== */
 .hobbies-intro {
   font-size: 1.05rem;
-  color: #555;
+  color: #4a4a4a;
   text-align: center;
   margin-bottom: 2.5rem;
   font-style: italic;
@@ -491,7 +491,7 @@ address a:hover .external-link-icon {
 
 .hobby-card p {
   font-size: 0.95rem;
-  color: #555;
+  color: #4a4a4a;
   line-height: 1.7;
   text-align: left;
 }
@@ -599,7 +599,7 @@ address a:hover .external-link-icon {
 
 .sitemap-description {
   margin: 0;
-  color: #666;
+  color: #595959;
   line-height: 1.6;
 }
 
@@ -826,14 +826,14 @@ address a:hover .external-link-icon {
 
 .search-result-item p {
   font-size: 0.85rem;
-  color: #666;
+  color: #595959;
   margin: 0;
   line-height: 1.4;
 }
 
 .search-result-page {
   font-size: 0.75rem;
-  color: #999;
+  color: #767676;
   margin-top: 0.3rem;
 }
 
@@ -841,7 +841,7 @@ address a:hover .external-link-icon {
 .search-loading {
   padding: 1.5rem;
   text-align: center;
-  color: #666;
+  color: #595959;
   font-size: 0.9rem;
 }
 
