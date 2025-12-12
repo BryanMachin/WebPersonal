@@ -1,7 +1,9 @@
-let searchIndex = null;
-let currentSearchLang = 'es';
-let searchTranslations = null;
+// Variables globales para el sistema de búsqueda
+let searchIndex = null; // Índice de búsqueda con contenido de todas las páginas
+let currentSearchLang = 'es'; // Idioma actual de la búsqueda
+let searchTranslations = null; // Traducciones cargadas desde el JSON
 
+// Carga las traducciones desde el archivo JSON
 async function loadTranslationsForSearch() {
   if (searchTranslations) return searchTranslations;
   
@@ -14,6 +16,7 @@ async function loadTranslationsForSearch() {
   }
 }
 
+// Mapeo de páginas y sus claves de contenido para indexación
 const PAGE_MAPPING = {
   'index.html': {
     key: 'home',
@@ -37,6 +40,7 @@ const PAGE_MAPPING = {
   }
 };
 
+// Obtiene un valor anidado de un objeto usando notación de punto (ej: "nav.home")
 function getNestedValue(obj, path) {
   const keys = path.split('.');
   let value = obj;
@@ -50,6 +54,7 @@ function getNestedValue(obj, path) {
   return value;
 }
 
+// Carga el índice de búsqueda con el contenido de todas las páginas en el idioma especificado
 async function loadSearchIndex(lang = 'es') {
   await loadTranslationsForSearch();
   
@@ -60,6 +65,7 @@ async function loadSearchIndex(lang = 'es') {
   currentSearchLang = lang;
   const t = searchTranslations[lang];
   
+  // Construye el índice mapeando cada página con su contenido traducido
   searchIndex = Object.entries(PAGE_MAPPING).map(([url, config]) => {
     const content = config.contentKeys
       .map(key => getNestedValue(t, key))
@@ -78,18 +84,21 @@ async function loadSearchIndex(lang = 'es') {
   });
 }
 
+// Recarga el índice de búsqueda cuando cambia el idioma
 async function reloadSearchIndex(lang) {
   searchIndex = null;
   await loadSearchIndex(lang);
 }
 
+// Normaliza el texto eliminando acentos y convirtiendo a minúsculas
 function normalizeText(text) {
   return text
     .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '');
+    .normalize('NFD') // Descompone caracteres acentuados
+    .replace(/[\u0300-\u036f]/g, ''); // Elimina los signos diacríticos
 }
 
+// Busca el término en todas las páginas del índice y calcula la relevancia
 function searchContent(query) {
   if (!searchIndex || !query || query.trim().length < 2) {
     return [];
@@ -104,6 +113,7 @@ function searchContent(query) {
     if (searchableText.includes(normalizedQuery)) {
       let relevance = 0;
       
+      // Calcula relevancia según dónde se encuentre el término
       if (normalizeText(page.title).includes(normalizedQuery)) relevance += 10;
       if (normalizeText(page.description).includes(normalizedQuery)) relevance += 7;
       if (normalizeText(page.content).includes(normalizedQuery)) relevance += 5;
@@ -118,25 +128,31 @@ function searchContent(query) {
     }
   });
 
+  // Ordena los resultados por relevancia (mayor a menor)
   return results.sort((a, b) => b.relevance - a.relevance);
 }
 
+// Crea un extracto del texto resaltando el término de búsqueda
 function createExcerpt(text, query) {
   const normalizedText = normalizeText(text);
   const normalizedQuery = normalizeText(query);
   const index = normalizedText.indexOf(normalizedQuery);
   
+  // Si no se encuentra el término, retorna los primeros 120 caracteres
   if (index === -1) {
     return text.substring(0, 120) + (text.length > 120 ? '...' : '');
   }
 
+  // Extrae contexto alrededor del término encontrado
   const start = Math.max(0, index - 40);
   const end = Math.min(text.length, index + query.length + 60);
   let excerpt = text.substring(start, end);
   
+  // Agrega puntos suspensivos si es necesario
   if (start > 0) excerpt = '...' + excerpt;
   if (end < text.length) excerpt = excerpt + '...';
 
+  // Resalta el término de búsqueda con la etiqueta <mark>
   const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const regex = new RegExp(`(${escapedQuery})`, 'gi');
   excerpt = excerpt.replace(regex, '<mark>$1</mark>');
@@ -144,12 +160,14 @@ function createExcerpt(text, query) {
   return excerpt;
 }
 
+// Muestra los resultados de búsqueda en el contenedor del DOM
 function displayResults(results, query) {
   const resultsContainer = document.getElementById('search-results');
   if (!resultsContainer) return;
 
   const t = searchTranslations?.[currentSearchLang]?.search || { noResults: 'No se encontraron resultados para' };
 
+  // Muestra mensaje si no hay resultados
   if (results.length === 0) {
     resultsContainer.innerHTML = `
       <div class="search-no-results">
@@ -160,6 +178,7 @@ function displayResults(results, query) {
     return;
   }
 
+  // Genera el HTML de los resultados
   resultsContainer.innerHTML = results
     .map(result => `
       <div class="search-result-item" role="listitem" tabindex="0" data-url="${result.url}">
@@ -170,6 +189,7 @@ function displayResults(results, query) {
     `)
     .join('');
 
+  // Agrega listeners de navegación a cada resultado
   const items = resultsContainer.querySelectorAll('.search-result-item');
   items.forEach(item => {
     const url = item.getAttribute('data-url');
@@ -188,66 +208,78 @@ function displayResults(results, query) {
   resultsContainer.classList.add('active');
 }
 
+// Muestra el mensaje de carga mientras se prepara el índice
 function showLoading(container) {
   const t = searchTranslations?.[currentSearchLang]?.search || { loading: 'Cargando índice...' };
   container.innerHTML = `<div class="search-loading">${t.loading}</div>`;
   container.classList.add('active');
 }
 
+// Oculta el contenedor de resultados
 function hideResults(container) {
   container?.classList.remove('active');
 }
 
+// Escapa caracteres HTML para prevenir XSS
 function escapeHtml(text) {
   const div = document.createElement('div');
   div.textContent = text;
   return div.innerHTML;
 }
 
+// Función global para actualizar las traducciones cuando cambia el idioma
 window.updateSearchTranslations = async function(lang) {
   currentSearchLang = lang;
   await reloadSearchIndex(lang);
   hideResults(document.getElementById('search-results'));
 };
 
+// Inicializa el sistema de búsqueda cuando el DOM está listo
 document.addEventListener('DOMContentLoaded', async () => {
   const searchInput = document.getElementById('search-input');
   const resultsContainer = document.getElementById('search-results');
 
   if (!searchInput) return;
 
+  // Obtiene el idioma actual del sistema
   const currentLang = window.i18n?.getCurrentLanguage() || 'es';
   currentSearchLang = currentLang;
 
   let searchTimeout;
   let indexLoaded = false;
 
+  // Listener para el input de búsqueda con debounce
   searchInput.addEventListener('input', async (e) => {
     clearTimeout(searchTimeout);
     const query = e.target.value.trim();
 
+    // Oculta resultados si la búsqueda es muy corta
     if (query.length < 2) {
       hideResults(resultsContainer);
       return;
     }
 
+    // Carga el índice la primera vez que se busca algo
     if (!indexLoaded && !searchIndex) {
       showLoading(resultsContainer);
       await loadSearchIndex(currentSearchLang);
       indexLoaded = true;
     }
 
+    // Espera 300ms después del último input antes de buscar
     searchTimeout = setTimeout(() => {
       displayResults(searchContent(query), query);
     }, 300);
   });
 
+  // Oculta resultados al hacer clic fuera del buscador
   document.addEventListener('click', (e) => {
     if (!searchInput.contains(e.target) && !resultsContainer?.contains(e.target)) {
       hideResults(resultsContainer);
     }
   });
 
+  // Manejo de teclas en el input de búsqueda
   searchInput.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       hideResults(resultsContainer);
@@ -258,6 +290,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
+  // Navegación con teclado en los resultados
   resultsContainer?.addEventListener('keydown', (e) => {
     const items = Array.from(resultsContainer.querySelectorAll('.search-result-item'));
     const current = items.indexOf(e.target);

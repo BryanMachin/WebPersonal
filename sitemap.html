@@ -10,35 +10,40 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body>
+<body data-page="sitemap">
+  <a href="#main-content" class="skip-to-content" data-i18n="accessibility.skipToContent">Saltar al contenido principal</a>
 
   <header class="topbar">
     <nav data-i18n-attr="aria-label" data-i18n="nav.ariaLabel" aria-label="Navegación principal">
       <ul class="top-nav">
-        <li><a href="index.html"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Inicio</span></a></li>
-        <li><a href="about.html"><i class="fa-solid fa-user"></i> <span data-i18n="nav.about">Sobre mí</span></a></li>
-        <li><a href="projects.html"><i class="fa-solid fa-briefcase"></i> <span data-i18n="nav.projects">Proyectos</span></a></li>
-        <li><a href="hobbies.html"><i class="fa-solid fa-heart"></i> <span data-i18n="nav.hobbies">Intereses</span></a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> <span data-i18n="nav.contact">Contacto</span></a></li>
+        <li><a href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> <span data-i18n="nav.home">Inicio</span></a></li>
+        <li><a href="about.html"><i class="fa-solid fa-user" aria-hidden="true"></i> <span data-i18n="nav.about">Sobre mí</span></a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> <span data-i18n="nav.projects">Proyectos</span></a></li>
+        <li><a href="hobbies.html"><i class="fa-solid fa-heart" aria-hidden="true"></i> <span data-i18n="nav.hobbies">Intereses</span></a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> <span data-i18n="nav.contact">Contacto</span></a></li>
       </ul>
     </nav>
     <div class="language-selector">
+      <label for="language-select" data-i18n="language.label">Idioma:</label>
       <select id="language-select" aria-label="Seleccionar idioma">
         <option value="es">ES</option>
         <option value="en">EN</option>
       </select>
     </div>
     <div class="search-container">
-      <i class="fas fa-search search-icon"></i>
-      <input 
-        type="search" 
-        id="search-input" 
-        placeholder="Buscar..." 
-        data-i18n="search.placeholder"
-        data-i18n-attr="aria-label"
-        aria-label="Buscar"
-        autocomplete="off">
-      <div id="search-results" class="search-results" role="list" aria-live="polite"></div>
+      <label for="search-input" data-i18n="search.label">Buscar:</label>
+      <div class="search-input-wrapper">
+        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+        <input 
+          type="search" 
+          id="search-input" 
+          placeholder="Buscar..." 
+          data-i18n="search.placeholder"
+          data-i18n-attr="aria-label"
+          aria-label="Buscar"
+          autocomplete="off">
+        <div id="search-results" class="search-results" role="list" aria-live="polite"></div>
+      </div>
     </div>
   </header>
 
@@ -50,23 +55,23 @@
       <nav aria-label="Estructura del sitio" data-i18n-attr="aria-label" data-i18n="sitemap.structureLabel">
         <ul class="sitemap-list">
           <li class="sitemap-item">
-            <a href="index.html" class="sitemap-link"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Inicio</span></a>
+            <a href="index.html" class="sitemap-link"><i class="fa-solid fa-house" aria-hidden="true"></i> <span data-i18n="nav.home">Inicio</span></a>
             <p class="sitemap-description" data-i18n="sitemap.homeDesc">Página principal donde podrás conocer más sobre mi trayectoria académica, experiencia y proyectos.</p>
           </li>
           <li class="sitemap-item">
-            <a href="about.html" class="sitemap-link"><i class="fa-solid fa-user"></i> <span data-i18n="nav.about">Sobre mí</span></a>
+            <a href="about.html" class="sitemap-link"><i class="fa-solid fa-user" aria-hidden="true"></i> <span data-i18n="nav.about">Sobre mí</span></a>
             <p class="sitemap-description" data-i18n="sitemap.aboutDesc">Información sobre mi formación académica, experiencia profesional en desarrollo web y blockchain, intereses profesionales y trayectoria.</p>
           </li>
           <li class="sitemap-item">
-            <a href="projects.html" class="sitemap-link"><i class="fa-solid fa-briefcase"></i> <span data-i18n="nav.projects">Proyectos</span></a>
+            <a href="projects.html" class="sitemap-link"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> <span data-i18n="nav.projects">Proyectos</span></a>
             <p class="sitemap-description" data-i18n="sitemap.projectsDesc">Portafolio de proyectos personales y profesionales, incluyendo Weather Bot, sistemas blockchain, aplicaciones web y más.</p>
           </li>
           <li class="sitemap-item">
-            <a href="hobbies.html" class="sitemap-link"><i class="fa-solid fa-heart"></i> <span data-i18n="nav.hobbies">Intereses</span></a>
+            <a href="hobbies.html" class="sitemap-link"><i class="fa-solid fa-heart" aria-hidden="true"></i> <span data-i18n="nav.hobbies">Intereses</span></a>
             <p class="sitemap-description" data-i18n="sitemap.hobbiesDesc">Descubre mis aficiones y pasatiempos, incluyendo desarrollo web, fútbol, música, coches y más.</p>
           </li>
           <li class="sitemap-item">
-            <a href="contact.html" class="sitemap-link"><i class="fa-solid fa-envelope"></i> <span data-i18n="nav.contact">Contacto</span></a>
+            <a href="contact.html" class="sitemap-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> <span data-i18n="nav.contact">Contacto</span></a>
             <p class="sitemap-description" data-i18n="sitemap.contactDesc">Información de contacto incluyendo email, teléfono, LinkedIn y GitHub para ponerte en contacto conmigo.</p>
           </li>
         </ul>

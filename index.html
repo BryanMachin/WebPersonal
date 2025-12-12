@@ -11,34 +11,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body data-page="home">
+  <a href="#main-content" class="skip-to-content" data-i18n="accessibility.skipToContent">Saltar al contenido principal</a>
 
   <header class="topbar">
     <nav data-i18n-attr="aria-label" data-i18n="nav.ariaLabel" aria-label="Navegación principal">
       <ul class="top-nav">
-        <li><a href="index.html" aria-current="page"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Inicio</span></a></li>
-        <li><a href="about.html"><i class="fa-solid fa-user"></i> <span data-i18n="nav.about">Sobre mí</span></a></li>
-        <li><a href="projects.html"><i class="fa-solid fa-briefcase"></i> <span data-i18n="nav.projects">Proyectos</span></a></li>
-        <li><a href="hobbies.html"><i class="fa-solid fa-heart"></i> <span data-i18n="nav.hobbies">Intereses</span></a></li>
-        <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> <span data-i18n="nav.contact">Contacto</span></a></li>
+        <li><a href="index.html" aria-current="page"><i class="fa-solid fa-house" aria-hidden="true"></i> <span data-i18n="nav.home">Inicio</span></a></li>
+        <li><a href="about.html"><i class="fa-solid fa-user" aria-hidden="true"></i> <span data-i18n="nav.about">Sobre mí</span></a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> <span data-i18n="nav.projects">Proyectos</span></a></li>
+        <li><a href="hobbies.html"><i class="fa-solid fa-heart" aria-hidden="true"></i> <span data-i18n="nav.hobbies">Intereses</span></a></li>
+        <li><a href="contact.html"><i class="fa-solid fa-envelope" aria-hidden="true"></i> <span data-i18n="nav.contact">Contacto</span></a></li>
       </ul>
     </nav>
     <div class="language-selector">
+      <label for="language-select" data-i18n="language.label">Idioma:</label>
       <select id="language-select" aria-label="Seleccionar idioma">
         <option value="es">ES</option>
         <option value="en">EN</option>
       </select>
     </div>
     <div class="search-container">
-      <i class="fas fa-search search-icon"></i>
-      <input 
-        type="search" 
-        id="search-input" 
-        placeholder="Buscar..." 
-        data-i18n="search.placeholder"
-        data-i18n-attr="aria-label"
-        aria-label="Buscar"
-        autocomplete="off">
-      <div id="search-results" class="search-results" role="list" aria-live="polite"></div>
+      <label for="search-input" data-i18n="search.label">Buscar:</label>
+      <div class="search-input-wrapper">
+        <i class="fas fa-search search-icon" aria-hidden="true"></i>
+        <input 
+          type="search" 
+          id="search-input" 
+          placeholder="Buscar..." 
+          data-i18n="search.placeholder"
+          data-i18n-attr="aria-label"
+          aria-label="Buscar"
+          autocomplete="off">
+        <div id="search-results" class="search-results" role="list" aria-live="polite"></div>
+      </div>
     </div>
   </header>
 
@@ -46,15 +51,7 @@
     <section class="card" role="banner">
       <h1 data-i18n="home.name">Bryan Machín García</h1>
       <h2 class="subtitle" data-i18n="home.title">Desarrollador Full Stack e Investigador en Criptografía</h2>
-      <p>
-        <span data-i18n="home.intro1">Desarrollador con experiencia en</span> 
-        <span data-tooltip="Framework de JavaScript para aplicaciones web modernas" data-i18n-attr="data-tooltip" data-i18n="tooltips.angular" tabindex="0">Angular</span>, 
-        C#, 
-        <span data-tooltip="Plataforma de desarrollo de Microsoft para aplicaciones multiplataforma" data-i18n-attr="data-tooltip" data-i18n="tooltips.dotnet" tabindex="0">.NET Core</span>, 
-        <span data-i18n="home.intro2">Python y tecnologías</span> 
-        <span data-tooltip="Tecnología de registro distribuido que permite transacciones seguras y transparentes" data-i18n-attr="data-tooltip" data-i18n="tooltips.blockchain" tabindex="0">Blockchain</span>. 
-        <span data-i18n="home.intro3">Actualmente cursando Máster en Ingeniería Web en la Universidad de Oviedo.</span>
-      </p>
+      <p data-i18n="home.intro">Desarrollador con experiencia en Angular, C#, .NET Core, Python y tecnologías Blockchain. Actualmente cursando Máster en Ingeniería Web en la Universidad de Oviedo.</p>
       
       <video class="home-video" autoplay loop muted playsinline oncontextmenu="return false;" aria-label="Video de presentación de Bryan Machín" data-i18n-attr="aria-label" data-i18n="home.videoLabel" title="Video de presentación">
         <source src="video/futbol.mp4" type="video/mp4">
