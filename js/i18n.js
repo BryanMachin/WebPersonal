@@ -69,7 +69,11 @@ function changeLanguage(lang) {
     // Si tiene data-i18n-attr, traduce ese atributo específico
     const attr = element.getAttribute('data-i18n-attr');
     if (attr) {
-      element.setAttribute(attr, translation);
+      // Soporta múltiples atributos separados por coma
+      const attrs = attr.split(',').map(a => a.trim());
+      attrs.forEach(a => {
+        element.setAttribute(a, translation);
+      });
     } else {
       // Manejo especial para inputs de búsqueda
       if (element.tagName === 'INPUT' && element.type === 'search') {
@@ -86,6 +90,13 @@ function changeLanguage(lang) {
         }
       }
     }
+  });
+  
+  // Traduce placeholders con data-i18n-placeholder
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+    const key = element.getAttribute('data-i18n-placeholder');
+    const translation = getTranslation(key, lang);
+    element.placeholder = translation;
   });
   
   updateMetaTags(lang);
