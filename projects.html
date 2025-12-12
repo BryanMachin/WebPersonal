@@ -48,54 +48,62 @@
     </div>
   </header>
 
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html" data-i18n="breadcrumb.home">Inicio</a></li>
+      <li><span class="breadcrumb-separator" aria-hidden="true">/</span></li>
+      <li><span aria-current="page" data-i18n="breadcrumb.projects">Proyectos</span></li>
+    </ol>
+  </nav>
+
   <main id="main-content">
     <section class="card">
       <h1 data-i18n="projects.title">Proyectos</h1>
       
       <div class="project-item">
-        <h3 data-i18n="projects.project1.name">Weather Bot</h3>
+        <h2 data-i18n="projects.project1.name">Weather Bot</h2>
         <p class="project-date" data-i18n="projects.project1.date">Julio 2024</p>
         <p data-i18n="projects.project1.description">Chatbot para consultas relacionadas principalmente con el clima. También permite consultar datos históricos de la región de Boulder en Colorado.</p>
         <p class="project-skills"><strong>Skills:</strong> <span data-i18n="projects.project1.skills">Python, Docker, AI, Streamlit, GitLab, Pruebas automatizadas, Flowise, Hugging Face, Ngrok</span></p>
       </div>
       
       <div class="project-item">
-        <h3 data-i18n="projects.project2.name">Análisis de Rendimiento para Hyperledger Fabric v2.4</h3>
+        <h2 data-i18n="projects.project2.name">Análisis de Rendimiento para Hyperledger Fabric v2.4</h2>
         <p class="project-date"><span data-i18n="projects.project2.date">Mayo 2022 - Diciembre 2022</span> | <span data-i18n="projects.project2.location">La Habana, Cuba</span></p>
         <p data-i18n="projects.project2.description">Investigación sobre la plataforma blockchain Hyperledger Fabric con la intención de ofrecer una configuración para dos posibles escenarios de trabajo: volúmenes bajos y altos de transacciones por segundo.</p>
         <p class="project-skills"><strong>Skills:</strong> <span data-i18n="projects.project2.skills">Hyperledger Fabric, Minifab, Estadística, Coeficiente de Spearman, R</span></p>
       </div>
       
       <div class="project-item">
-        <h3 data-i18n="projects.project3.name">LearnPro: Simulador de Proceso de Aprendizaje</h3>
+        <h2 data-i18n="projects.project3.name">LearnPro: Simulador de Proceso de Aprendizaje</h2>
         <p class="project-date" data-i18n="projects.project3.date">Noviembre 2021 - Enero 2022</p>
         <p data-i18n="projects.project3.description">Software para encontrar una estrategia de aprendizaje usando IA, basado en la simulación de un ambiente de aprendizaje definido en un lenguaje de dominio específico (DSL), llamado LearnPro.</p>
         <p class="project-skills"><strong>Skills:</strong> <span data-i18n="projects.project3.skills">Python, Streamlit, Inteligencia Artificial, Compilación, Simulación</span></p>
       </div>
       
       <div class="project-item">
-        <h3 data-i18n="projects.project4.name">Sistema de Recuperación de Información</h3>
+        <h2 data-i18n="projects.project4.name">Sistema de Recuperación de Información</h2>
         <p class="project-date" data-i18n="projects.project4.date">Noviembre 2021 - Enero 2022</p>
         <p data-i18n="projects.project4.description">Diseño e implementación de un sistema de recuperación de información basado en el modelo vectorial, para procesar consultas y recuperar documentos relevantes del corpus.</p>
         <p class="project-skills"><strong>Skills:</strong> <span data-i18n="projects.project4.skills">Python, Álgebra</span></p>
       </div>
       
       <div class="project-item">
-        <h3 data-i18n="projects.project5.name">Cine+</h3>
+        <h2 data-i18n="projects.project5.name">Cine+</h2>
         <p class="project-date" data-i18n="projects.project5.date">Abril 2021 - Junio 2021</p>
         <p data-i18n="projects.project5.description">Plataforma oficial de un cine, para gestionar la reserva de asientos y la venta de boletos para sus usuarios.</p>
         <p class="project-skills"><strong>Skills:</strong> <span data-i18n="projects.project5.skills">HTML, CSS, SQL, C#, ASP.NET Core, .NET Core, Entity Framework</span></p>
       </div>
       
       <div class="project-item">
-        <h3 data-i18n="projects.project6.name">Sims 4 Db-Manager</h3>
+        <h2 data-i18n="projects.project6.name">Sims 4 Db-Manager</h2>
         <p class="project-date" data-i18n="projects.project6.date">Marzo 2021 - Mayo 2021</p>
         <p data-i18n="projects.project6.description">Sistema de base de datos para modelar y gestionar las características principales del juego The Sims 4, estableciendo la conexión a la base de datos mediante operaciones CRUD, desde la perspectiva del jugador.</p>
         <p class="project-skills"><strong>Skills:</strong> <span data-i18n="projects.project6.skills">HTML, CSS, SQL, C#, ASP.NET Core, .NET Core, Entity Framework</span></p>
       </div>
       
       <div class="project-item">
-        <h3 data-i18n="projects.project7.name">WhatsApp Descentralizado</h3>
+        <h2 data-i18n="projects.project7.name">WhatsApp Descentralizado</h2>
         <p class="project-date" data-i18n="projects.project7.date">Mayo 2022 - Julio 2022</p>
         <p data-i18n="projects.project7.description">Diseño e implementación de una aplicación de mensajería descentralizada.</p>
         <p class="project-skills"><strong>Skills:</strong> <span data-i18n="projects.project7.skills">Python, FastAPI, Sistemas Distribuidos</span></p>
@@ -104,6 +112,20 @@
   </main>
 
   <footer class="site-footer">
+    <div class="social-links">
+      <a href="mailto:uo312147@uniovi.es" aria-label="Enviar email a Bryan">
+        <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+        <span data-i18n="footer.email">Email</span>
+      </a>
+      <a href="https://linkedin.com/in/bryan-machin-garcia-89b64522a" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de LinkedIn de Bryan">
+        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+        <span data-i18n="footer.linkedin">LinkedIn</span>
+      </a>
+      <a href="https://github.com/BryanMachin" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de GitHub de Bryan">
+        <span class="fa-brands fa-github" aria-hidden="true"></span>
+        <span data-i18n="footer.github">GitHub</span>
+      </a>
+    </div>
     <p>
       <span>Copyright &copy; <time datetime="2025">2025</time> Bryan. <span data-i18n="footer.copyright">Todos los derechos reservados.</span></span>
       <span><span data-i18n="footer.lastUpdate">Última actualización:</span> <time datetime="2025-12-08">08/12/2025</time></span>

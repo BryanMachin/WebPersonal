@@ -48,6 +48,14 @@
     </div>
   </header>
 
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html" data-i18n="breadcrumb.home">Inicio</a></li>
+      <li><span class="breadcrumb-separator" aria-hidden="true">/</span></li>
+      <li><span aria-current="page" data-i18n="breadcrumb.hobbies">Intereses</span></li>
+    </ol>
+  </nav>
+
   <main id="main-content">
     <section class="card">
       <h1 data-i18n="hobbies.title">Mis intereses</h1>
@@ -58,7 +66,7 @@
           <div class="hobby-icon">
             <span class="fa-solid fa-code" aria-hidden="true"></span>
           </div>
-          <h3 data-i18n="hobbies.webDev">Desarrollo web y programación</h3>
+          <h2 data-i18n="hobbies.webDev">Desarrollo web y programación</h2>
           <p data-i18n="hobbies.webDevDesc">Me apasiona crear soluciones elegantes y eficientes. Disfruto explorando nuevas tecnologías, frameworks y mejores prácticas. Cada línea de código es una oportunidad para aprender algo nuevo y construir algo significativo.</p>
         </div>
         
@@ -66,7 +74,7 @@
           <div class="hobby-icon">
             <span class="fa-solid fa-futbol" aria-hidden="true"></span>
           </div>
-          <h3 data-i18n="hobbies.football">Fútbol (fanático del FC Barcelona)</h3>
+          <h2 data-i18n="hobbies.football">Fútbol (fanático del FC Barcelona)</h2>
           <p data-i18n="hobbies.footballDesc">Más que un club. Seguidor incondicional del FC Barcelona desde siempre. El fútbol me enseña sobre trabajo en equipo, estrategia y la importancia de nunca rendirse. Cada partido es una lección de vida.</p>
         </div>
         
@@ -74,7 +82,7 @@
           <div class="hobby-icon">
             <span class="fa-solid fa-music" aria-hidden="true"></span>
           </div>
-          <h3 data-i18n="hobbies.music">Música POP</h3>
+          <h2 data-i18n="hobbies.music">Música POP</h2>
           <p data-i18n="hobbies.musicDesc">La música es mi compañera constante. El POP, con sus melodías pegajosas y letras emotivas, me acompaña en cada momento del día. Desde clásicos hasta los últimos éxitos, la música es mi banda sonora personal.</p>
         </div>
         
@@ -82,7 +90,7 @@
           <div class="hobby-icon">
             <span class="fa-solid fa-car" aria-hidden="true"></span>
           </div>
-          <h3 data-i18n="hobbies.cars">Coches y tecnología automotriz</h3>
+          <h2 data-i18n="hobbies.cars">Coches y tecnología automotriz</h2>
           <p data-i18n="hobbies.carsDesc">Fascinado por la evolución de la industria automotriz. Desde los motores de combustión hasta los vehículos eléctricos y autónomos, la tecnología en el automovilismo representa la innovación en su máxima expresión.</p>
         </div>
         
@@ -90,7 +98,7 @@
           <div class="hobby-icon">
             <span class="fa-solid fa-spa" aria-hidden="true"></span>
           </div>
-          <h3 data-i18n="hobbies.peace">Tranquilidad y momentos de calma</h3>
+          <h2 data-i18n="hobbies.peace">Tranquilidad y momentos de calma</h2>
           <p data-i18n="hobbies.peaceDesc">En un mundo acelerado, valoro profundamente los momentos de paz y reflexión. Estos espacios de calma me permiten recargar energías, pensar con claridad y mantener el equilibrio entre lo profesional y lo personal.</p>
         </div>
         
@@ -98,7 +106,7 @@
           <div class="hobby-icon">
             <span class="fa-solid fa-lightbulb" aria-hidden="true"></span>
           </div>
-          <h3 data-i18n="hobbies.problemSolving">Resolver problemas complejos</h3>
+          <h2 data-i18n="hobbies.problemSolving">Resolver problemas complejos</h2>
           <p data-i18n="hobbies.problemSolvingDesc">Los desafíos complejos son mi zona de confort. Me motiva enfrentarme a problemas difíciles, analizar todas las variables y encontrar soluciones creativas. Cada problema resuelto es una victoria que impulsa mi crecimiento.</p>
         </div>
       </div>
@@ -106,6 +114,20 @@
   </main>
 
   <footer class="site-footer">
+    <div class="social-links">
+      <a href="mailto:uo312147@uniovi.es" aria-label="Enviar email a Bryan">
+        <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+        <span data-i18n="footer.email">Email</span>
+      </a>
+      <a href="https://linkedin.com/in/bryan-machin-garcia-89b64522a" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de LinkedIn de Bryan">
+        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+        <span data-i18n="footer.linkedin">LinkedIn</span>
+      </a>
+      <a href="https://github.com/BryanMachin" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de GitHub de Bryan">
+        <span class="fa-brands fa-github" aria-hidden="true"></span>
+        <span data-i18n="footer.github">GitHub</span>
+      </a>
+    </div>
     <p>
       <span>Copyright &copy; <time datetime="2025">2025</time> Bryan. <span data-i18n="footer.copyright">Todos los derechos reservados.</span></span>
       <span><span data-i18n="footer.lastUpdate">Última actualización:</span> <time datetime="2025-12-08">08/12/2025.</time></span>

@@ -168,12 +168,29 @@
     },
     "contact": {
       "title": "Contacto",
+      "intro": "¿Tienes alguna pregunta o quieres trabajar juntos? No dudes en contactarme a través de cualquiera de estos medios:",
       "socialMedia": "Redes Sociales",
-      "email": "Email: uo312147@uniovi.es",
-      "phone": "Teléfono: +34 642 277 518",
+      "email": "uo312147@uniovi.es",
+      "phone": "+34 642 277 518",
       "linkedin": "LinkedIn: Bryan Machín García",
       "github": "GitHub: BryanMachin",
-      "externalLink": "(abre en nueva ventana)"
+      "externalLink": "(abre en nueva ventana)",
+      "formTitle": "O envíame un mensaje",
+      "formName": "Nombre",
+      "formNamePlaceholder": "Tu nombre completo",
+      "formEmail": "Email",
+      "formEmailPlaceholder": "tu.email@ejemplo.com",
+      "formSubject": "Asunto",
+      "formSubjectPlaceholder": "Motivo del mensaje",
+      "formMessage": "Mensaje",
+      "formMessagePlaceholder": "Escribe tu mensaje aquí...",
+      "formSubmit": "Enviar mensaje",
+      "formSending": "Enviando...",
+      "errorRequired": "Este campo es obligatorio",
+      "errorEmail": "Por favor, introduce un email válido",
+      "errorMinLength": "Debe tener al menos {min} caracteres",
+      "successMessage": "¡Mensaje enviado correctamente! Te responderé lo antes posible.",
+      "errorMessage": "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo o contacta directamente por email."
     },
     "sitemap": {
       "title": "Mapa del Sitio",
@@ -188,12 +205,24 @@
     "footer": {
       "lastUpdate": "Última actualización:",
       "sitemap": "Mapa del Sitio",
-      "copyright": "Todos los derechos reservados."
+      "copyright": "Todos los derechos reservados.",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email",
+      "socialMedia": "Sígueme en:"
     },
     "language": {
       "spanish": "Español",
       "english": "English",
       "label": "Idioma:"
+    },
+    "breadcrumb": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "hobbies": "Intereses",
+      "contact": "Contacto",
+      "sitemap": "Mapa del Sitio"
     }
   },
   "en": {
@@ -365,12 +394,29 @@
     },
     "contact": {
       "title": "Contact",
+      "intro": "Have a question or want to work together? Feel free to contact me through any of these channels:",
       "socialMedia": "Social Media",
-      "email": "Email: uo312147@uniovi.es",
-      "phone": "Phone: +34 642 277 518",
+      "email": "uo312147@uniovi.es",
+      "phone": "+34 642 277 518",
       "linkedin": "LinkedIn: Bryan Machín García",
       "github": "GitHub: BryanMachin",
-      "externalLink": "(opens in new window)"
+      "externalLink": "(opens in new window)",
+      "formTitle": "Or send me a message",
+      "formName": "Name",
+      "formNamePlaceholder": "Your full name",
+      "formEmail": "Email",
+      "formEmailPlaceholder": "your.email@example.com",
+      "formSubject": "Subject",
+      "formSubjectPlaceholder": "Message subject",
+      "formMessage": "Message",
+      "formMessagePlaceholder": "Write your message here...",
+      "formSubmit": "Send message",
+      "formSending": "Sending...",
+      "errorRequired": "This field is required",
+      "errorEmail": "Please enter a valid email",
+      "errorMinLength": "Must be at least {min} characters",
+      "successMessage": "Message sent successfully! I'll respond as soon as possible.",
+      "errorMessage": "There was an error sending the message. Please try again or contact directly by email."
     },
     "sitemap": {
       "title": "Site Map",
@@ -385,12 +431,24 @@
     "footer": {
       "lastUpdate": "Last update:",
       "sitemap": "Site Map",
-      "copyright": "All rights reserved."
+      "copyright": "All rights reserved.",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email",
+      "socialMedia": "Follow me:"
     },
     "language": {
       "spanish": "Español",
       "english": "English",
       "label": "Language:"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "about": "About me",
+      "projects": "Projects",
+      "hobbies": "Interests",
+      "contact": "Contact",
+      "sitemap": "Site Map"
     }
   }
 }
